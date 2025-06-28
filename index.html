@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weed081</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="cartoon-crown-vector-icon-clipart-cartoon-icons-gold-crown-sticker_616488_wh860-removebg-preview.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #2b5876 0%, #4e4376 100%);
+        }
+        
+        .music-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .wave-divider {
+            position: relative;
+            height: 60px;
+            overflow: hidden;
+        }
+        
+        .wave-divider svg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .partnership-logo {
+            transition: all 0.3s ease;
+            filter: grayscale(100%);
+            opacity: 0.7;
+        }
+        
+        .partnership-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+            transform: scale(1.05);
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <a href="#" class="flex items-center">
+                        <i class="fas fa-crown text-yellow-600 text-3xl mr-2"></i>
+                        <span class="font-bold text-2xl text-gray-800">Weed081</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-gray-800 hover:text-purple-600 transition">Início</a>
+                    <a href="#music" class="text-gray-800 hover:text-purple-600 transition">Músicas</a>
+                    <a href="#partnerships" class="text-gray-800 hover:text-purple-600 transition">Parcerias</a>
+                    <a href="#contact" class="text-gray-800 hover:text-purple-600 transition">Contato</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <i class="fas fa-bars text-gray-800 text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-gray-800 hover:bg-purple-100 rounded-md">Início</a>
+                <a href="#music" class="block px-3 py-2 text-gray-800 hover:bg-purple-100 rounded-md">Músicas</a>
+                <a href="#partnerships" class="block px-3 py-2 text-gray-800 hover:bg-purple-100 rounded-md">Parcerias</a>
+                <a href="#contact" class="block px-3 py-2 text-gray-800 hover:bg-purple-100 rounded-md">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-24 pb-16 md:pt-32 md:pb-24 text-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Do Ibura pro mundão.</h1>
+                    <p class="text-xl mb-8">Bem-vindo ao universo de Weedzinhoo081, onde o humor é duvidoso, mas a vivência é 100% real. Diretamente do Ibura, Recife,eu compartilho o dia a dia com quem entende a quebrada, sem filtro e sem papinho.</p>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                        <img src="rosto_weed.png" alt="Blogueiro Musical de Recife" class="w-full h-full object-cover">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- About Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Sobre o mim</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto"></div>
+            </div>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <img src="https://oxerecife.com.br/wp-content/uploads/2024/07/agosto31ateurbanaibura-840x560.jpg" alt="Recife" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">A mídia do Ibura</h3>
+                    <p class="text-gray-600 mb-4">Dá ideia boy! Eu sou o Weedzinhoo081, diretamente do Ibura 📍, Aqui é vivência real, sem filtro e sem pala. Criei esse espaço pra contar minhas histórias, soltar umas verdades e fazer tu rir.
+
+Nós tem um humor meio duvidoso, mas é assim que a vida é: pesada às vezes, engraçada sempre que dá. Uso minhas redes pra mostrar o corre do dia a dia, os papos de quebrada, os absurdos que só quem vive sabe — tudo dá melhor forma</p>
+                    <p class="text-gray-600 mb-6">No TikTok já somos +31 mil que colam com o conteúdo, fortalecendo a voz de quem é da favela, mas também quer viver, zoar e crescer.:</p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/xweed081/" class="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded-full font-medium transition flex items-center">
+                            <i class="fab fa-instagram mr-2"></i> Instagram
+                        </a>
+                        <a href="https://www.youtube.com/@Xweed081" class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded-full font-medium transition flex items-center">
+                            <i class="fab fa-youtube mr-2"></i> YouTube
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Minhas Músicas</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Explore minha discografia e descubra a mais pura essência do Ibura</p>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Music Card 1 -->
+                <div class="music-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="hojeeaonde.png" alt="Música 1" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <button class="play-button bg-purple-600 hover:bg-purple-700 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                               <a href="https://youtu.be/Q-J6yxP68ck?si=IRTqsQzyboSbmOCe"><i class="fas fa-play"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Hoje é aonde</h3>
+                        <p class="text-gray-600 mb-4">2025</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-purple-600 font-medium"><a href="https://www.youtube.com/watch?v=Q-J6yxP68ck&pp=ygUHd2VlZDA4MdIHCQnDCQGHKiGM7w%3D%3D">Ouvir agora</a></span>
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-spotify"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Music Card 2 -->
+                <div class="music-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="balanessesmandado.png" alt="Música 2" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <button class="play-button bg-purple-600 hover:bg-purple-700 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <a href="https://youtu.be/Y68aW1__mcM?si=Vjrz-9h7Unej5Ifo"><i class="fas fa-play"></i></a>
+                                
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Bala nesses Mandado</h3>
+                        <p class="text-gray-600 mb-4">2023</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://youtu.be/Y68aW1__mcM?si=izFclm5box19iIJN"><span class="text-purple-600 font-medium">Ouvir agora</span></a>
+                            
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-spotify"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Music Card 3 -->
+                <div class="music-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300">
+                    <div class="relative">
+                        <img src="bregoso.png" alt="Música 3" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-30 flex items-center justify-center">
+                            <button class="play-button bg-purple-600 hover:bg-purple-700 text-white rounded-full w-12 h-12 flex items-center justify-center">
+                                <a href="https://youtu.be/YGDMmgTtBbo?si=QTbXIkOIFKDVEKNA"><i class="fas fa-play"></i></a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">BREGOSO</h3>
+                        <p class="text-gray-600 mb-4">2023</p>
+                        <div class="flex justify-between items-center">
+                            <a href="https://youtu.be/YGDMmgTtBbo?si=QTbXIkOIFKDVEKNA"><span class="text-purple-600 font-medium">Ouvir agora</span></a>
+                            
+                            <div class="flex space-x-2">
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-spotify"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-youtube"></i></a>
+                                <a href="#" class="text-gray-500 hover:text-purple-600"><i class="fab fa-apple"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Videos Section -->
+    
+
+    <!-- Partnerships Section -->
+    <section id="partnerships" class="py-16 bg-gray-50">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Parcerias</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Marcas e projetos que apoiam meu trabalho</p>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <!-- Partnership 1 - You can replace these with actual logos -->
+                <div class="partnership-logo flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md">
+                    <a href="https://www.instagram.com/cs_imports81/"><img src="csimports.jpg" alt="Parceiro 1" class="max-h-16"></a>
+                    
+                </div>
+                
+                <div class="partnership-logo flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md">
+                    <a href="https://www.instagram.com/cs_imports81/"><img src="kloriginais.jpg" alt="Parceiro 2" class="max-h-16"></a>
+                    
+                </div>
+                
+                <div class="partnership-logo flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md">
+                    <a href="https://www.instagram.com/cs_imports81/"><img src="luxuria.jpg" alt="Parceiro 3" class="max-h-16"></a>
+                    
+                </div>
+                
+                <div class="partnership-logo flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md">
+                    <a href="https://www.instagram.com/cs_imports81/"><img src="studio.jpg" alt="Parceiro 4" class="max-h-16"></a>
+                </div>
+                <div class="partnership-logo flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md">
+                    <a href="https://www.instagram.com/cs_imports81/"><img src="golds.jpg" alt="Parceiro 4" class="max-h-16"></a>
+                </div>
+                <div class="partnership-logo flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md">
+                    <a href="https://www.instagram.com/cs_imports81/"><img src="tabakladen.jpg" alt="Parceiro 4" class="max-h-16"></a>
+                </div>
+                <div class="partnership-logo flex items-center justify-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md">
+                    <a href="https://www.instagram.com/cs_imports81/"><img src="texas_pratas.jpg" alt="Parceiro 4" class="max-h-16"></a>
+                </div>
+            </div>
+            
+            <!-- Partnership Form (for adding new partnerships manually) -->
+            
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">Entre em Contato</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Para parcerias ou colaborações.</p>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-4"></div>
+            </div>
+            
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-8 md:mb-0 md:pr-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                        <h3 class="text-xl font-bold text-gray-800 mb-4">Informações de Contato</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-purple-100 p-3 rounded-full">
+                                    <i class="fas fa-map-marker-alt text-purple-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-semibold text-gray-600">LOCALIZAÇÃO</h4>
+                                    <p class="text-gray-800">Ibura, Pernambuco, Brasil</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-purple-100 p-3 rounded-full">
+                                    <i class="fas fa-envelope text-purple-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-semibold text-gray-600">EMAIL</h4>
+                                    <p class="text-gray-800">assessoriaweed081@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="flex-shrink-0 bg-purple-100 p-3 rounded-full">
+                                    <i class="fas fa-phone-alt text-purple-600"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-sm font-semibold text-gray-600">TELEFONE</h4>
+                                    <p class="text-gray-800">+55 81 98933-2654</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-sm font-semibold text-gray-600 mb-3">REDES SOCIAIS</h4>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/xweed081/" class="bg-gray-200 hover:bg-purple-600 hover:text-white text-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@Xweed081" class="bg-gray-200 hover:bg-purple-600 hover:text-white text-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="https://open.spotify.com/track/0027Xzwe8tZVuozvNkzwVJ?si=702ca7ef00de4532" class="bg-gray-200 hover:bg-purple-600 hover:text-white text-gray-800 w-10 h-10 rounded-full flex items-center justify-center transition">
+                                    <i class="fab fa-spotify"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <a href="#" class="flex items-center mb-4">
+                        <i class="fas fa-crown text-yellow-400 text-2xl mr-2"></i>
+                        <span class="font-bold text-xl">Weed081</span>
+                    </a>
+                    <p class="text-gray-400">A essência do Ibura e Recife em cada nota e vídeo.</p>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Links Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-purple-400 transition">Início</a></li>
+                        <li><a href="#music" class="text-gray-400 hover:text-purple-400 transition">Músicas</a></li>
+                        <li><a href="#videos" class="text-gray-400 hover:text-purple-400 transition">Vídeos</a></li>
+                        <li><a href="#partnerships" class="text-gray-400 hover:text-purple-400 transition">Parcerias</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-purple-400 transition">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Redes Sociais</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.instagram.com/xweed081/" class="bg-gray-700 hover:bg-purple-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@Xweed081" class="bg-gray-700 hover:bg-purple-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://open.spotify.com/track/0027Xzwe8tZVuozvNkzwVJ?si=702ca7ef00de4532" class="bg-gray-700 hover:bg-purple-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition">
+                            <i class="fab fa-spotify"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Weed081. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const mobileMenuButton = document.querySelector('.mobile-menu-button');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        const mobileMenuLinks = document.querySelectorAll('.mobile-menu a');
+        mobileMenuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        
+        // Contact form functionality
+        const contactForm = document.getElementById('contact-form');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to a server
+            // For this example, we'll just show a success message
+            alert('Mensagem enviada com sucesso! Em breve entraremos em contato.');
+            contactForm.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    const headerOffset = 80;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                    
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
